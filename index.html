@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Sports Tournament Management</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f0f1a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1a1a2e;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e94560;
+        }
+
+        header h1 {
+            color: #e94560;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e94560;
+        }
+
+       
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(rgba(15, 15, 26, 0.8), rgba(15, 15, 26, 0.8)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #0f3460;
+            text-shadow: 2px 2px 4px #e94560;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .btn {
+            background-color: #e94560;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0f3460;
+            box-shadow: 0 0 10px #e94560;
+        }
+
+        .tournaments {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .tournaments h3 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #e94560;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #1a1a2e;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #e94560;
+            box-shadow: 0 10px 20px rgba(233, 69, 96, 0.2);
+        }
+
+        .card h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .prize {
+            color: #4cd137;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+     
+        footer {
+            background-color: #1a1a2e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BattleArena</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Dominate the Battleground</h2>
+        <p>रजिस्टर करें, अपनी स्क्वाड बनाएं और इंडिया के सबसे बड़े ई-स्पोर्ट्स टूर्नामेंट्स जीतें।</p>
+        <a href="#tournaments" class="btn">View Upcoming Matches</a>
+    </section>
+
+    <section id="tournaments" class="tournaments">
+        <h3>Upcoming Tournaments</h3>
+        <div class="card-container">
+            
+            <div class="card">
+                <h4>BGMI Weekly Scrims</h4>
+                <p>Date: 15 March 2026<br>Format: Squad (Erangel & Miramar)<br>Entry: Free</p>
+                <div class="prize">Prize Pool: ₹10,000</div>
+                <button class="btn">Register Now</button>
+            </div>
+
+            <div class="card">
+                <h4>Valorant Pro League</h4>
+                <p>Date: 20 March 2026<br>Format: 5v5 Custom<br>Entry: ₹500/Team</p>
+                <div class="prize">Prize Pool: ₹50,000</div>
+                <button class="btn">Register Now</button>
+            </div>
+
+            <div class="card">
+                <h4>Free Fire Clash Squad</h4>
+                <p>Date: 25 March 2026<br>Format: 4v4<br>Entry: Free</p>
+                <div class="prize">Prize Pool: ₹5,000</div>
+                <button class="btn">Register Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BattleArena - BCA Final Year Minor Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
